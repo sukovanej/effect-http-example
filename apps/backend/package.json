@@ -1,0 +1,24 @@
+{
+  "name": "@effect-http-example/backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "serve": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@effect-http-example/api": "workspace:^",
+    "@effect/platform-node": "^0.31.4",
+    "effect": "2.0.0-next.55",
+    "effect-http": "^0.38.3",
+    "effect-log": "^0.23.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.1.2"
+  }
+}

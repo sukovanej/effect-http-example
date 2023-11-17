@@ -1,0 +1,27 @@
+{
+  "name": "@effect-http-example/api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "import": {
+        "types": "./dist/*.d.ts",
+        "default": "./dist/*.js"
+      }
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@effect/schema": "^0.48.1",
+    "effect": "2.0.0-next.55",
+    "effect-http": "^0.38.3"
+  }
+}
