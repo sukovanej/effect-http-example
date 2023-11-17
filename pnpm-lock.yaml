@@ -42,8 +42,8 @@ importers:
         specifier: 2.0.0-next.55
         version: 2.0.0-next.55
       effect-http:
-        specifier: ^0.39.0
-        version: 0.39.0(@effect/schema@0.48.3)(effect@2.0.0-next.55)
+        specifier: ^0.39.1
+        version: 0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       effect-log:
         specifier: ^0.23.1
         version: 0.23.1(effect@2.0.0-next.55)
@@ -61,8 +61,8 @@ importers:
         specifier: 2.0.0-next.55
         version: 2.0.0-next.55
       effect-http:
-        specifier: ^0.39.0
-        version: 0.39.0(@effect/schema@0.48.3)(effect@2.0.0-next.55)
+        specifier: ^0.39.1
+        version: 0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -92,8 +92,8 @@ importers:
         specifier: 2.0.0-next.55
         version: 2.0.0-next.55
       effect-http:
-        specifier: ^0.39.0
-        version: 0.39.0(@effect/schema@0.48.3)(effect@2.0.0-next.55)
+        specifier: ^0.39.1
+        version: 0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55)
 
 packages:
 
@@ -1360,8 +1360,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /effect-http@0.39.0(@effect/schema@0.48.3)(effect@2.0.0-next.55):
-    resolution: {integrity: sha512-/zEU9zOUw3juG+TTpcSWVsr+b37UKTB3WE9YZ6x85qbO7rgliJBp01+F4Bny0Tdxhdj5OeHQOUrJOAn31c4vdQ==}
+  /effect-http@0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55):
+    resolution: {integrity: sha512-2t+oeit8abVaysjHU5sOiJSSaOPPVCGG4FoBuiFglvCBlyShg4DQR8Etb8uGQ54vxgdTuq7BZTj65WFA42whhQ==}
     peerDependencies:
       '@effect/schema': ^0.48.3
       effect: 2.0.0-next.55
