@@ -1,30 +1,18 @@
-import * as Middleware from "@effect/platform/Http/Middleware";
-import * as ServerResponse from "@effect/platform/Http/ServerResponse";
-import { NodeServer, RouterBuilder } from "effect-http";
-import { api } from "@effect-http-example/api";
-import { Effect } from "effect";
+import { NodeServer } from "effect-http";
+import { Config, Effect, LogLevel, Logger, pipe } from "effect";
 import { runMain } from "@effect/platform-node/Runtime";
 import { PrettyLogger } from "effect-log";
+import { app } from "./app.js";
 
-const corsMiddleware = Middleware.make((app) =>
-  Effect.flatMap(
-    app,
-    ServerResponse.setHeaders({
-      "Access-Control-Allow-Origin": "http://localhost:3001",
-    }),
-  ),
-);
+const ServerConfig = Config.all({
+  port: Config.number("PORT").pipe(Config.withDefault(3000)),
+});
 
-const app = RouterBuilder.make(api).pipe(
-  RouterBuilder.handle("getItems", () =>
-    Effect.succeed([{ name: "test", value: 69 }]),
-  ),
-  RouterBuilder.build,
-  corsMiddleware,
-);
-
-app.pipe(
-  NodeServer.listen({ port: 3000 }),
+const main = pipe(
+  Effect.config(ServerConfig),
+  Effect.flatMap((config) => app.pipe(NodeServer.listen({ port: config.port }))),
   Effect.provide(PrettyLogger.layer()),
-  runMain,
+  Logger.withMinimumLogLevel(LogLevel.Warning)
 );
+
+runMain(main);

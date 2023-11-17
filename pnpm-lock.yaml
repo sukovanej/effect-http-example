@@ -36,21 +36,21 @@ importers:
         specifier: workspace:^
         version: link:../../packages/api
       '@effect/platform-node':
-        specifier: ^0.31.4
-        version: 0.31.4(@effect/schema@0.48.1)(effect@2.0.0-next.55)
+        specifier: ^0.31.5
+        version: 0.31.5(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       effect:
         specifier: 2.0.0-next.55
         version: 2.0.0-next.55
       effect-http:
-        specifier: ^0.38.3
-        version: 0.38.3(@effect/schema@0.48.1)(effect@2.0.0-next.55)
+        specifier: ^0.39.1
+        version: 0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       effect-log:
         specifier: ^0.23.1
         version: 0.23.1(effect@2.0.0-next.55)
     devDependencies:
       tsx:
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: ^4.1.3
+        version: 4.1.3
 
   apps/frontend:
     dependencies:
@@ -61,8 +61,8 @@ importers:
         specifier: 2.0.0-next.55
         version: 2.0.0-next.55
       effect-http:
-        specifier: ^0.38.3
-        version: 0.38.3(@effect/schema@0.48.1)(effect@2.0.0-next.55)
+        specifier: ^0.39.1
+        version: 0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -86,14 +86,14 @@ importers:
   packages/api:
     dependencies:
       '@effect/schema':
-        specifier: ^0.48.1
-        version: 0.48.1(effect@2.0.0-next.55)(fast-check@3.13.2)
+        specifier: ^0.48.3
+        version: 0.48.3(effect@2.0.0-next.55)(fast-check@3.13.2)
       effect:
         specifier: 2.0.0-next.55
         version: 2.0.0-next.55
       effect-http:
-        specifier: ^0.38.3
-        version: 0.38.3(@effect/schema@0.48.1)(effect@2.0.0-next.55)
+        specifier: ^0.39.1
+        version: 0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55)
 
 packages:
 
@@ -326,12 +326,12 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@effect/platform-node@0.31.4(@effect/schema@0.48.1)(effect@2.0.0-next.55):
-    resolution: {integrity: sha512-V1XfyAuXZpYcMVjPN3PSYAADDreLYm0wPeb2Ylhec53m5PpFb2jMZJuPfEgHOTJ3T4DqJ99iMsa3U5Ga43nrvg==}
+  /@effect/platform-node@0.31.5(@effect/schema@0.48.3)(effect@2.0.0-next.55):
+    resolution: {integrity: sha512-/1reKggkn8j4tzicGEun3ciTccAZSvBVypzx8QYN0fmksEv3sr9edaWqbWuG2qtysIOjtqgsxmX7qSAHAsfOJg==}
     peerDependencies:
       effect: 2.0.0-next.55
     dependencies:
-      '@effect/platform': 0.30.4(@effect/schema@0.48.1)(effect@2.0.0-next.55)
+      '@effect/platform': 0.30.5(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       effect: 2.0.0-next.55
       mime: 3.0.0
       multipasta: 0.1.18
@@ -339,21 +339,21 @@ packages:
       - '@effect/schema'
     dev: false
 
-  /@effect/platform@0.30.4(@effect/schema@0.48.1)(effect@2.0.0-next.55):
-    resolution: {integrity: sha512-Vvy8YvILRr9oRxT6E5k25oE/qHRI9hbZ8mreyqFS9teB6GXFONqa6fIkp09f35RIN359hBW/vTbg1cPz47eHjA==}
+  /@effect/platform@0.30.5(@effect/schema@0.48.3)(effect@2.0.0-next.55):
+    resolution: {integrity: sha512-zWQ09GWGjNBYyRIcEgfXwH+TFwucET4ziV4xAHvJCzrFXN43Z2AHb/LtIby28IBNBtxcSWa8pAe76S20WkALtw==}
     peerDependencies:
       '@effect/schema': ^0.48.0
       effect: 2.0.0-next.55
     dependencies:
-      '@effect/schema': 0.48.1(effect@2.0.0-next.55)(fast-check@3.13.2)
+      '@effect/schema': 0.48.3(effect@2.0.0-next.55)(fast-check@3.13.2)
       effect: 2.0.0-next.55
       find-my-way: 7.7.0
       multipasta: 0.1.18
       path-browserify: 1.0.1
     dev: false
 
-  /@effect/schema@0.48.1(effect@2.0.0-next.55)(fast-check@3.13.2):
-    resolution: {integrity: sha512-39rSG+hNG12ZpwTabe5YlXBPUyZgU+fakz5RUALa7ycLL5c3Fw9faZhAsxD0dFKzr0ADVLnKx1TCORVh73m4uQ==}
+  /@effect/schema@0.48.3(effect@2.0.0-next.55)(fast-check@3.13.2):
+    resolution: {integrity: sha512-6tvwQrav5Q2Z7FlA6Kpo0ufKANZXi9DME8BPDCFVstGMwvt1SGXemj77ypEGrbaJKNpYqUhrcNERhpEv5adExQ==}
     peerDependencies:
       effect: 2.0.0-next.55
       fast-check: ^3.13.2
@@ -1252,8 +1252,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001562
-      electron-to-chromium: 1.4.586
+      caniuse-lite: 1.0.30001563
+      electron-to-chromium: 1.4.588
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: true
@@ -1267,8 +1267,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001562:
-    resolution: {integrity: sha512-kfte3Hym//51EdX4239i+Rmp20EsLIYGdPkERegTgU19hQWCRhsRFGKHTliUlsry53tv17K7n077Kqa0WJU4ng==}
+  /caniuse-lite@1.0.30001563:
+    resolution: {integrity: sha512-na2WUmOxnwIZtwnFI2CZ/3er0wdNzU7hN+cPYz/z2ajHThnkWjNBOpEPP4n+4r2WPM847JaMotaJE3bnfzjyKw==}
     dev: true
 
   /chalk@2.4.2:
@@ -1360,17 +1360,19 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /effect-http@0.38.3(@effect/schema@0.48.1)(effect@2.0.0-next.55):
-    resolution: {integrity: sha512-B76MJwWnUNpeQq1w1HGsUIpGtAlp39NLOWW+odZbDqeHjgCvQjdUyYRHePKPpyT+Eo/h3Mnc0Y2uwslddYIxdA==}
+  /effect-http@0.39.1(@effect/schema@0.48.3)(effect@2.0.0-next.55):
+    resolution: {integrity: sha512-2t+oeit8abVaysjHU5sOiJSSaOPPVCGG4FoBuiFglvCBlyShg4DQR8Etb8uGQ54vxgdTuq7BZTj65WFA42whhQ==}
     peerDependencies:
-      '@effect/schema': ^0.48.1
+      '@effect/schema': ^0.48.3
       effect: 2.0.0-next.55
     dependencies:
-      '@effect/platform': 0.30.4(@effect/schema@0.48.1)(effect@2.0.0-next.55)
-      '@effect/schema': 0.48.1(effect@2.0.0-next.55)(fast-check@3.13.2)
+      '@effect/platform': 0.30.5(@effect/schema@0.48.3)(effect@2.0.0-next.55)
+      '@effect/schema': 0.48.3(effect@2.0.0-next.55)(fast-check@3.13.2)
       effect: 2.0.0-next.55
-      schema-openapi: 0.21.0(@effect/schema@0.48.1)(effect@2.0.0-next.55)
+      schema-openapi: 0.21.0(@effect/schema@0.48.3)(effect@2.0.0-next.55)
       swagger-ui-dist: 5.10.0
+    optionalDependencies:
+      '@effect/platform-node': 0.31.5(@effect/schema@0.48.3)(effect@2.0.0-next.55)
     dev: false
 
   /effect-log@0.23.1(effect@2.0.0-next.55):
@@ -1385,8 +1387,8 @@ packages:
     resolution: {integrity: sha512-kNOB/HaDSdaFSDVXK2gyf4XcTKbKKlllyoS871uDyoJskcc+024sSOHnNioXZPgkqaz55a3mad4DFfLUIETwYQ==}
     dev: false
 
-  /electron-to-chromium@1.4.586:
-    resolution: {integrity: sha512-qMa+E6yf1fNQbg3G66pHLXeJUP5CCCzNat1VPczOZOqgI2w4u+8y9sQnswMdGs5m4C1rOePq37EVBr/nsPQY7w==}
+  /electron-to-chromium@1.4.588:
+    resolution: {integrity: sha512-soytjxwbgcCu7nh5Pf4S2/4wa6UIu+A3p03U2yVr53qGxi1/VTR3ENI+p50v+UxqqZAfl48j3z55ud7VHIOr9w==}
     dev: true
 
   /esbuild@0.18.20:
@@ -2115,13 +2117,13 @@ packages:
       loose-envify: 1.4.0
     dev: false
 
-  /schema-openapi@0.21.0(@effect/schema@0.48.1)(effect@2.0.0-next.55):
+  /schema-openapi@0.21.0(@effect/schema@0.48.3)(effect@2.0.0-next.55):
     resolution: {integrity: sha512-BF4CjRwDXVBoDCsSfH8UC+QyBLXLIifM6wbBkdzce8CJxDn7bLwGhDNVjwmXXMvlPxvAtw8LS9lhY5r7/RmisQ==}
     peerDependencies:
       '@effect/schema': ^0.48.0
       effect: 2.0.0-next.55
     dependencies:
-      '@effect/schema': 0.48.1(effect@2.0.0-next.55)(fast-check@3.13.2)
+      '@effect/schema': 0.48.3(effect@2.0.0-next.55)(fast-check@3.13.2)
       effect: 2.0.0-next.55
     dev: false
 
@@ -2227,8 +2229,8 @@ packages:
       typescript: 5.2.2
     dev: true
 
-  /tsx@4.1.2:
-    resolution: {integrity: sha512-1spM1bFV6MP2s4tO4tDC7g52fsaFdtEWdO4GfGdqi20qUgPbnAJqixOyIAvCSx1DDj3YIUB4CD06owTWUsOAuQ==}
+  /tsx@4.1.3:
+    resolution: {integrity: sha512-DLiTy1eri4nhqgVVy+15YKC6Ij2BMFxGdDMkVrSDkNuISUJLv7n0NgZpFLpdM+qmwXar34XllgYi4cxkNMbDwQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
