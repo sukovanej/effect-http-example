@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@effect-http-example/api": "workspace:^",
+    "@tanstack/react-query": "^5.8.4",
     "effect": "2.0.0-next.55",
-    "effect-http": "^0.39.1",
+    "effect-http": "^0.40.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
