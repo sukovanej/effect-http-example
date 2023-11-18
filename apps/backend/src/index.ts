@@ -12,7 +12,7 @@ const main = pipe(
   Effect.config(ServerConfig),
   Effect.flatMap((config) => app.pipe(NodeServer.listen({ port: config.port }))),
   Effect.provide(PrettyLogger.layer()),
-  Logger.withMinimumLogLevel(LogLevel.Warning)
+  Logger.withMinimumLogLevel(LogLevel.All)
 );
 
 runMain(main);

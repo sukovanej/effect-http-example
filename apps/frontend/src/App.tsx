@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 import { Items } from "@effect-http-example/api";
 import { client } from "./client.js";
 import { Effect } from "effect";
@@ -28,7 +25,7 @@ function App() {
       {items && (
         <ul>
           {items.map((item) => (
-            <li>{JSON.stringify(item)}</li>
+            <li key={item.name}>{JSON.stringify(item)}</li>
           ))}
         </ul>
       )}
